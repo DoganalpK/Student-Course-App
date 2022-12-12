@@ -1,9 +1,3 @@
-Product App with .Net Core, MediatR
-
-<div id="top"></div>
-
-
-<br />
 <div align="center">
   <h3 align="center">Student-Course-App</h3>
 </div>
