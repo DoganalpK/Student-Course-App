@@ -16,5 +16,6 @@ Student-Course-App
 - [x] C#
 - [x] .Net(6)
 - [x] Unit of Work & Generic Repository
+- [x] Entityframework Core
 - [x] CQRS & MediatR
 - [x] API
