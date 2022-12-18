@@ -18,19 +18,18 @@ namespace StudentCourseApp.Application.Features.MediatR.Queries
         public class GetAllProductsQueryHandler : IRequestHandler<GetAllProductsQuery, ServiceResponse<List<ProductViewDto>>>
         {
             private readonly IProductRepository _productRepository;
-            private readonly IUow _uow;
+            //private readonly IUow _uow;
             private readonly IMapper _mapper;
 
-            public GetAllProductsQueryHandler(IProductRepository productRepository, IUow uow, IMapper mapper)
+            public GetAllProductsQueryHandler(IProductRepository productRepository, IMapper mapper)
             {
                 _productRepository = productRepository;
-                _uow = uow;
                 _mapper = mapper;
             }
 
             public async Task<ServiceResponse<List<ProductViewDto>>> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
             {
-                var products = await _uow.GetRepository<Product>().GetAllAsync();
+                var products = await _productRepository.GetAllAsync();
                 var dto = _mapper.Map<List<ProductViewDto>>(products);
                 return new ServiceResponse<List<ProductViewDto>>(dto);
             }

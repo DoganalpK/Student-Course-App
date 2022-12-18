@@ -18,7 +18,7 @@ namespace StudentCourseApp.Persistence
             });
 
             services.AddScoped<IUow, Uow>();
-            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
         }
     }
 }

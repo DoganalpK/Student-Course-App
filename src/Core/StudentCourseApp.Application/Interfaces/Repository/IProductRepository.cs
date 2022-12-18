@@ -9,5 +9,6 @@ namespace StudentCourseApp.Application.Interfaces.Repository
 {
     public interface IProductRepository : IGenericRepository<Product>
     {
+        Task<Product> test(Product product);
     }
 }
