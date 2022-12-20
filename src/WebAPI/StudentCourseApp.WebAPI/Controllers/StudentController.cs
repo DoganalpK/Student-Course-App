@@ -15,8 +15,8 @@ namespace StudentCourseApp.WebAPI.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll(CreateStudentCommandRequest request)
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateStudentCommandRequest request)
         {
             return Ok(await _mediator.Send(request));
         }

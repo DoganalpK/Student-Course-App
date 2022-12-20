@@ -1,10 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using StudentCourseApp.Application.Interfaces.Repository;
-using StudentCourseApp.Application.Interfaces.UnitOfWork;
 using StudentCourseApp.Persistence.Contexts;
 using StudentCourseApp.Persistence.Repositories;
-using StudentCourseApp.Persistence.UnitOfWork;
 
 namespace StudentCourseApp.Persistence
 {
@@ -16,6 +14,8 @@ namespace StudentCourseApp.Persistence
             {
                 opt.UseInMemoryDatabase("memoryDb");
             });
+
+            services.AddScoped<IStudentRepository,StudentRepository>();
         }
     }
 }
