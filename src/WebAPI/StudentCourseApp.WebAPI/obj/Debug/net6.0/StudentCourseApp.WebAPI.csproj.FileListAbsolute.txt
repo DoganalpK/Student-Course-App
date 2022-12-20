@@ -75,3 +75,5 @@ C:\Users\dogan\source\repos\StudentCourseApp\src\WebAPI\StudentCourseApp.WebAPI\
 C:\Users\dogan\source\repos\StudentCourseApp\src\WebAPI\StudentCourseApp.WebAPI\obj\Debug\net6.0\StudentCourseApp.WebAPI.pdb
 C:\Users\dogan\source\repos\StudentCourseApp\src\WebAPI\StudentCourseApp.WebAPI\obj\Debug\net6.0\StudentCourseApp.WebAPI.genruntimeconfig.cache
 C:\Users\dogan\source\repos\StudentCourseApp\src\WebAPI\StudentCourseApp.WebAPI\obj\Debug\net6.0\ref\StudentCourseApp.WebAPI.dll
+C:\Users\dogan\source\repos\StudentCourseApp\src\WebAPI\StudentCourseApp.WebAPI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\dogan\source\repos\StudentCourseApp\src\WebAPI\StudentCourseApp.WebAPI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

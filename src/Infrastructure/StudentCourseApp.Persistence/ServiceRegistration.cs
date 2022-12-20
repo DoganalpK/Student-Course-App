@@ -16,9 +16,6 @@ namespace StudentCourseApp.Persistence
             {
                 opt.UseInMemoryDatabase("memoryDb");
             });
-
-            services.AddScoped<IUow, Uow>();
-            services.AddScoped<IProductRepository, ProductRepository>();
         }
     }
 }

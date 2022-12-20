@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using StudentCourseApp.Application.Dtos;
-using StudentCourseApp.Application.Features.MediatR.Commands;
+using StudentCourseApp.Application.Features.MediatR.Commands.CreateStudent;
 using StudentCourseApp.Domain.Entities;
 
 namespace StudentCourseApp.Application.Mappings
@@ -9,8 +9,8 @@ namespace StudentCourseApp.Application.Mappings
     {
         public GeneralMappings()
         {
-            CreateMap<Product, ProductViewDto>().ReverseMap();
-            CreateMap<Product, CreateProductCommand>().ReverseMap();
+            CreateMap<CreateStudentCommandRequest, Student>().ReverseMap();
+            CreateMap<CreateStudentCommandRequest, StudentDto>().ReverseMap();
         }
     }
 }

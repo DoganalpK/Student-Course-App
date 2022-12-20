@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "RIG6pvpk8GkVq4zuKT93FMT3KkhSevO9HtZxZqu/z08wa7CX0GtPddOlWLBLF5m0907nEH5R1PCPSfrb34xMGQ==",
+  "dgSpecHash": "Y2mJd/XGAAswv2tVXNE0umMhRK/T65kXCyaM+Q7Tm/NZjRNT3pEJ43YPWwFTBNhpNNnbtV9cMcGd5DyNxlI9qA==",
   "success": true,
   "projectFilePath": "C:\\Users\\dogan\\source\\repos\\StudentCourseApp\\src\\Infrastructure\\StudentCourseApp.Persistence\\StudentCourseApp.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dogan\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\dogan\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\dogan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

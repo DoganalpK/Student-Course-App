@@ -14,24 +14,22 @@ namespace StudentCourseApp.Persistence.Contexts
         {
         }
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Student> Students { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Product>().HasData(
-                new Product()
+            modelBuilder.Entity<Student>().HasData(
+                new Student()
                 {
                     Id = Guid.NewGuid(),
-                    Name = "Pen",
-                    Value = 10,
-                    Quantity = 100,
+                    Name = "ali",
+                    Surname = "veli"
                 },
-                new Product()
+                new Student()
                 {
                     Id = Guid.NewGuid(),
-                    Name = "Paper",
-                    Value = 1,
-                    Quantity = 200,
+                    Name = "ayşe",
+                    Surname = "fatma"
                 }
             );
             base.OnModelCreating(modelBuilder);

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TUGMijTZssEpSnByQpIMXSjfpuuT5PvKvxicVAOJATNjXFSeqyvLDwmgzMjdeLE/Sua3sG+vPHSZbDQTYcGNXA==",
+  "dgSpecHash": "eQ2CF7RW4ZyG3jKbvTYjFhePdE6ZoH6ij4AwWlNFZwyhOVsOX08ffO8A7WQ+NyAPgmy706towsTcEJ4zLZqA3w==",
   "success": true,
   "projectFilePath": "C:\\Users\\dogan\\source\\repos\\StudentCourseApp\\src\\WebAPI\\StudentCourseApp.WebAPI\\StudentCourseApp.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dogan\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\dogan\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\dogan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
