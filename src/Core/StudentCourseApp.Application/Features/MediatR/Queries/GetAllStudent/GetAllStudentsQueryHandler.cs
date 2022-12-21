@@ -1,6 +1,10 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using MediatR;
 using StudentCourseApp.Application.Dtos;
+using StudentCourseApp.Application.Interfaces.Repository;
 using StudentCourseApp.Application.Wrappers;
+using StudentCourseApp.Application.Wrappers.Enums;
+using StudentCourseApp.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +13,22 @@ using System.Threading.Tasks;
 
 namespace StudentCourseApp.Application.Features.MediatR.Queries.GetAllStudent
 {
-    public class GetAllStudentsQueryHandler : IRequestHandler<GetAllStudentsQueryRequest, Response<List<StudentDto>>>
+    public class GetAllStudentsQueryHandler : IRequestHandler<GetAllStudentsQueryRequest, IResponse<List<StudentDto>>>
     {
-        public Task<Response<List<StudentDto>>> Handle(GetAllStudentsQueryRequest request, CancellationToken cancellationToken)
+        private readonly IStudentRepository _studentRepository;
+        private readonly IMapper _mapper;
+
+        public GetAllStudentsQueryHandler(IStudentRepository studentRepository, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _studentRepository = studentRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<IResponse<List<StudentDto>>> Handle(GetAllStudentsQueryRequest request, CancellationToken cancellationToken)
+        {
+            var students = await _studentRepository.GetAllAsync();
+            var dto = _mapper.Map<List<StudentDto>>(students);
+            return new Response<List<StudentDto>>(ResponseType.Success, dto);
         }
     }
 }
