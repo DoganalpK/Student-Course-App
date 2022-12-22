@@ -4,7 +4,7 @@ using StudentCourseApp.Application.Wrappers;
 
 namespace StudentCourseApp.Application.Features.MediatR.Commands.CreateStudent
 {
-    public class CreateStudentCommandRequest : IRequest<IResponse<StudentDto>>
+    public class CreateStudentCommandRequest : IRequest<IResponse>
     {
         public string Name { get; set; }
         public string Surname { get; set; }

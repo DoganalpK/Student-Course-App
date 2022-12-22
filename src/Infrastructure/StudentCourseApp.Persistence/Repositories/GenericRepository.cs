@@ -34,5 +34,18 @@ namespace StudentCourseApp.Persistence.Repositories
         {
             return await _context.Set<T>().FindAsync(id);
         }
+
+        public async Task RemoveAsync(Guid id)
+        {
+            var data = await _context.Set<T>().FindAsync(id);
+            _context.Set<T>().Remove(data);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdateAsync(T entity, T unchanged)
+        {
+            _context.Entry(unchanged).CurrentValues.SetValues(entity);
+            await _context.SaveChangesAsync();
+        }
     }
 }

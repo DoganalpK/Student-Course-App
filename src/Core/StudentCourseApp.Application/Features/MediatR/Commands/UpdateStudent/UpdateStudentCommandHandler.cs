@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
 using MediatR;
-using StudentCourseApp.Application.Dtos;
 using StudentCourseApp.Application.Interfaces.Repository;
 using StudentCourseApp.Application.Wrappers;
+using StudentCourseApp.Application.Wrappers.Enums;
+using StudentCourseApp.Domain.Entities;
 
 namespace StudentCourseApp.Application.Features.MediatR.Commands.UpdateStudent
 {
-    public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommandRequest, Response<StudentDto>>
+    public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommandRequest, IResponse>
     {
         private readonly IStudentRepository _studentRepository;
         private readonly IMapper _mapper;
@@ -17,10 +18,12 @@ namespace StudentCourseApp.Application.Features.MediatR.Commands.UpdateStudent
             _mapper = mapper;
         }
 
-        public Task<Response<StudentDto>> Handle(UpdateStudentCommandRequest request, CancellationToken cancellationToken)
+        public async Task<IResponse> Handle(UpdateStudentCommandRequest request, CancellationToken cancellationToken)
         {
-            //update student
-            throw new NotImplementedException();
+            var unchanged = await _studentRepository.GetByIdAsync(request.Id);
+            var requestDto = _mapper.Map<Student>(request);
+            await _studentRepository.UpdateAsync(requestDto, unchanged);
+            return new Response(ResponseType.Success);
         }
     }
 }

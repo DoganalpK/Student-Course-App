@@ -13,5 +13,7 @@ namespace StudentCourseApp.Application.Interfaces.Repository
         Task<List<T>> GetAllAsync();
         Task<T> GetByIdAsync(Guid id);
         Task AddAsync(T entity);
+        Task UpdateAsync(T entity, T unchanged);
+        Task RemoveAsync(Guid id);
     }
 }

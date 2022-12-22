@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace StudentCourseApp.Application.Features.MediatR.Queries.GetStudentById
 {
-    public class GetStudentByIdQueryRequest : IRequest<Response<StudentDto>>
+    public class GetStudentByIdQueryRequest : IRequest<IResponse<StudentDto>>
     {
         public Guid Id { get; set; }
     }
