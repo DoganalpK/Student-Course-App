@@ -6,8 +6,10 @@ namespace StudentCourseApp.Persistence.Repositories
 {
     public class StudentRepository : GenericRepository<Student>, IStudentRepository
     {
-        public StudentRepository(AppDbContext context):base(context)
+        private readonly AppDbContext _context;
+        public StudentRepository(AppDbContext context) : base(context)
         {
+            _context = context;
         }
     }
 }

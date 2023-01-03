@@ -21,8 +21,8 @@ namespace StudentCourseApp.Application.Features.MediatR.Commands.CreateStudent
         public async Task<IResponse> Handle(CreateStudentCommandRequest request, CancellationToken cancellationToken)
         {
             var dto = _mapper.Map<Student>(request);
-            await _studentRepository.AddAsync(dto);
-            return new Response(ResponseType.Success);
+            var data = await _studentRepository.AddAsync(dto);
+            return new Response<Student>(ResponseType.Success, data);
         }
     }
 }

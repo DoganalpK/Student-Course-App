@@ -3,7 +3,6 @@
 namespace StudentCourseApp.Application.Interfaces.Repository
 {
     public interface IStudentRepository : IGenericRepository<Student>
-    {
-        
+    {        
     }
 }

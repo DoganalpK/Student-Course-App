@@ -2,11 +2,6 @@
 using StudentCourseApp.Application.Interfaces.Repository;
 using StudentCourseApp.Domain.Common;
 using StudentCourseApp.Persistence.Contexts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StudentCourseApp.Persistence.Repositories
 {
@@ -19,15 +14,16 @@ namespace StudentCourseApp.Persistence.Repositories
             _context = context;
         }
 
-        public async Task AddAsync(T entity)
+        public async Task<T> AddAsync(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
             await _context.SaveChangesAsync();
+            return entity;
         }
 
         public async Task<List<T>> GetAllAsync()
         {
-            return await _context.Set<T>().ToListAsync();
+            return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
 
         public async Task<T> GetByIdAsync(Guid id)

@@ -9,7 +9,7 @@
       "StudentCourseApp.Persistence/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.11",
-          "Microsoft.EntityFrameworkCore.InMemory": "6.0.11",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.11",
           "StudentCourseApp.Application": "1.0.0",
@@ -193,17 +193,6 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "6.0.11.0",
-            "fileVersion": "6.0.1122.51302"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.InMemory/6.0.11": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.11"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
             "assemblyVersion": "6.0.11.0",
             "fileVersion": "6.0.1122.51302"
           }
@@ -699,13 +688,6 @@
       "sha512": "sha512-2H9vcmv9PIboVMisL0izD+xaUaWeZ/jqqRJeaD8MKIDaKwZsdHE790Sa4fAHjZjzVgoraELRI7CscjPMfLE2jA==",
       "path": "microsoft.entityframeworkcore.design/6.0.11",
       "hashPath": "microsoft.entityframeworkcore.design.6.0.11.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/6.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2h5Pyy5e5EJhvMVl1UGPTLst1Q/+8rwEIvjsFwQDrsOmbsgzlbkvCJM2K89wvjA3UKAn5nTyRxCzKu9MMaJYkg==",
-      "path": "microsoft.entityframeworkcore.inmemory/6.0.11",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.6.0.11.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.11": {
       "type": "package",

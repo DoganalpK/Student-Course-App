@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Y2mJd/XGAAswv2tVXNE0umMhRK/T65kXCyaM+Q7Tm/NZjRNT3pEJ43YPWwFTBNhpNNnbtV9cMcGd5DyNxlI9qA==",
+  "dgSpecHash": "PnxLllsFmFSF2dBFT0kgPCTLcubJa6q82JVacKNcoFNe1sp3nExCX9zjhYXHPcoN0XLHq0dssfwTgirH1foYQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\dogan\\source\\repos\\StudentCourseApp\\src\\Infrastructure\\StudentCourseApp.Persistence\\StudentCourseApp.Persistence.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,6 @@
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.11\\microsoft.entityframeworkcore.abstractions.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.11\\microsoft.entityframeworkcore.analyzers.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.11\\microsoft.entityframeworkcore.design.6.0.11.nupkg.sha512",
-    "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.11\\microsoft.entityframeworkcore.inmemory.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.11\\microsoft.entityframeworkcore.relational.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.11\\microsoft.entityframeworkcore.sqlserver.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.11\\microsoft.entityframeworkcore.tools.6.0.11.nupkg.sha512",

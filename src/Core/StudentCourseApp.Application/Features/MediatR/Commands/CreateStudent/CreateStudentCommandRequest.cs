@@ -1,12 +1,13 @@
 ﻿using MediatR;
-using StudentCourseApp.Application.Dtos;
 using StudentCourseApp.Application.Wrappers;
+using StudentCourseApp.Domain.Entities;
 
 namespace StudentCourseApp.Application.Features.MediatR.Commands.CreateStudent
 {
     public class CreateStudentCommandRequest : IRequest<IResponse>
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
+        public String Name { get; set; }
+        public String Surname { get; set; }
+        public Guid StudentClassId { get; set; }
     }
 }

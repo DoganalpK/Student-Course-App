@@ -5,7 +5,7 @@ using StudentCourseApp.Application.Interfaces.Repository;
 using StudentCourseApp.Application.Wrappers;
 using StudentCourseApp.Application.Wrappers.Enums;
 
-namespace StudentCourseApp.Application.Features.MediatR.Queries.GetAllStudent
+namespace StudentCourseApp.Application.Features.MediatR.Queries.GetAllStudents
 {
     public class GetAllStudentsQueryHandler : IRequestHandler<GetAllStudentsQueryRequest, IResponse<List<StudentDto>>>
     {

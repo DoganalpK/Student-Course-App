@@ -1,7 +1,9 @@
-﻿using FluentValidation.Results;
+﻿using FluentValidation;
+using FluentValidation.Results;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using StudentCourseApp.Application.Interfaces.Repository;
+using StudentCourseApp.Application.Behaviours;
+using StudentCourseApp.Application.Features.MediatR.Commands.CreateStudent;
 using StudentCourseApp.Application.Wrappers;
 using System.Reflection;
 
@@ -12,9 +14,10 @@ namespace StudentCourseApp.Application
         public static void AddApplicationServices(this IServiceCollection services)
         {
             var assmb = Assembly.GetExecutingAssembly();
-            //var assmb = AppDomain.CurrentDomain.GetAssemblies();
             services.AddAutoMapper(assmb);
             services.AddMediatR(assmb);
+            services.AddValidatorsFromAssembly(assmb);
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
         }
 
         //public static List<CustomValidationError> ConvertToCustomValidationError(this ValidationResult validationResult)

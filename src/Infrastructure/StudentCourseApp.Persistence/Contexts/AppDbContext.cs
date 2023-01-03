@@ -1,39 +1,33 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StudentCourseApp.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 
 namespace StudentCourseApp.Persistence.Contexts
 {
     public class AppDbContext : DbContext
     {
+        public AppDbContext()
+        {
+
+        }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
-
         public DbSet<Student> Students { get; set; }
+        public DbSet<StudentClass> StudentClasses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Student>().HasData(
-                new Student()
-                {
-                    Id = Guid.NewGuid(),
-                    Name = "ali",
-                    Surname = "veli"
-                },
-                new Student()
-                {
-                    Id = Guid.NewGuid(),
-                    Name = "ayşe",
-                    Surname = "fatma"
-                }
-            );
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
-        
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=localhost;Database=StudentCourseDb;Trusted_Connection=True;");
+            }
+        }
     }
 }

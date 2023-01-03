@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eQ2CF7RW4ZyG3jKbvTYjFhePdE6ZoH6ij4AwWlNFZwyhOVsOX08ffO8A7WQ+NyAPgmy706towsTcEJ4zLZqA3w==",
+  "dgSpecHash": "0vxSko6TzXum3t/O/RQmjFLyWmqg/N1Ob12W9o31yKqe8gC6b3DjTDSguhL6CGSSYDlFOZ/V1WV7faYClk/WIg==",
   "success": true,
   "projectFilePath": "C:\\Users\\dogan\\source\\repos\\StudentCourseApp\\src\\WebAPI\\StudentCourseApp.WebAPI\\StudentCourseApp.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,6 @@
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.11\\microsoft.entityframeworkcore.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.11\\microsoft.entityframeworkcore.abstractions.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.11\\microsoft.entityframeworkcore.analyzers.6.0.11.nupkg.sha512",
-    "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.11\\microsoft.entityframeworkcore.inmemory.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.11\\microsoft.entityframeworkcore.relational.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.11\\microsoft.entityframeworkcore.sqlserver.6.0.11.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
@@ -40,6 +39,7 @@
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\dogan\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\dogan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
