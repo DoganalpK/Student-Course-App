@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-
-namespace StudentCourseApp.Persistence.Contexts
+﻿namespace StudentCourseApp.Persistence.Contexts
 {
     //public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     //{

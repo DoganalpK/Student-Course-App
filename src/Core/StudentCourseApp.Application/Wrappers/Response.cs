@@ -1,10 +1,13 @@
 ﻿using StudentCourseApp.Application.Wrappers.Enums;
-using System.Reflection;
 
 namespace StudentCourseApp.Application.Wrappers
 {
     public class Response : IResponse
     {
+        public Response()
+        {
+
+        }
         public Response(ResponseType responseType)
         {
             ResponseType = responseType;

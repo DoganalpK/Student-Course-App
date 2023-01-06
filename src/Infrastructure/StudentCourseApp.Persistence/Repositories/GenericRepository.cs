@@ -26,12 +26,12 @@ namespace StudentCourseApp.Persistence.Repositories
             return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
 
-        public async Task<T> GetByIdAsync(Guid id)
+        public async Task<T> GetByIdAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public async Task RemoveAsync(Guid id)
+        public async Task RemoveAsync(object id)
         {
             var data = await _context.Set<T>().FindAsync(id);
             _context.Set<T>().Remove(data);

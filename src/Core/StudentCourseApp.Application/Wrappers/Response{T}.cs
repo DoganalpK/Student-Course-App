@@ -7,6 +7,10 @@ namespace StudentCourseApp.Application.Wrappers
         public T Data { get; set; }
         public List<CustomValidationError> ValidationErrors { get; set; }
 
+        public Response()
+        {
+
+        }
         public Response(ResponseType responseType, string message) : base(responseType, message)
         {
         }

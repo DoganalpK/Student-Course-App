@@ -1,10 +1,7 @@
 ﻿using FluentValidation;
-using FluentValidation.Results;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using StudentCourseApp.Application.Behaviours;
-using StudentCourseApp.Application.Features.MediatR.Commands.CreateStudent;
-using StudentCourseApp.Application.Wrappers;
 using System.Reflection;
 
 namespace StudentCourseApp.Application

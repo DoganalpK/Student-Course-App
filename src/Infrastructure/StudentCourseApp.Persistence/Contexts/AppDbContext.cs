@@ -8,13 +8,15 @@ namespace StudentCourseApp.Persistence.Contexts
     {
         public AppDbContext()
         {
-
         }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
+
         public DbSet<Student> Students { get; set; }
         public DbSet<StudentClass> StudentClasses { get; set; }
+        public DbSet<Lesson> Lessons { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

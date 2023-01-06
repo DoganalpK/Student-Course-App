@@ -10,10 +10,17 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\StudentCourseApp.Domain\StudentCourseApp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Commands\TeacherCommands\DeleteTeacher\" />
+    <Folder Include="Features\Commands\TeacherCommands\UpdateTeacher\" />
+    <Folder Include="Features\Queries\TeacherQueries\" />
   </ItemGroup>
 
 </Project>

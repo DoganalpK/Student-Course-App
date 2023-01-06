@@ -9,6 +9,8 @@ namespace StudentCourseApp.Persistence.Configurations
         public void Configure(EntityTypeBuilder<Student> builder)
         {
             builder.HasOne(x => x.StudentClass).WithMany(x => x.Students).HasForeignKey(x => x.StudentClassId).OnDelete(DeleteBehavior.NoAction);
+            builder.Property(x => x.Name).IsRequired();
+            builder.Property(x => x.Surname).IsRequired();
         }
     }
 }
